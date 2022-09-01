@@ -1,0 +1,12 @@
+<div>
+    <h1>Parent</h1>
+    <form (submit)='add()' [formGroup] = "form" >
+     
+
+            <input formControlName = 'my_value'>
+      <button type="submit">submit</button>
+    </form>
+    
+    <h2>Child</h2>
+    <app-child [myArr]="arr" (editEmmiter)="addItem($event)"></app-child>
+</div>

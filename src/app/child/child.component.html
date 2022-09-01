@@ -1,0 +1,10 @@
+<table>
+    <tr>
+        <th>My Strings</th>
+    </tr>
+    <tr *ngFor="let i of myArr">
+        <td>{{i}}</td>
+        <td><button (click)="addNewItem(i)">edit me</button></td>
+    </tr>
+    
+</table>
